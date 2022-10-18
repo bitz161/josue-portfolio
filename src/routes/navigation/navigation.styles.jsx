@@ -50,9 +50,37 @@ export const NavLinks = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
+  width: 50%;
   letter-spacing: 1px;
   color: ${({ themecolor }) => themecolor.textColor};
+  & > li {
+    padding: 0.5rem 1rem;
+    border-radius: 45px;
+    /* box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); */
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    &:hover {
+      background-color: #000;
+      box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.4);
+      color: #fff;
+      transform: translateY(-7px);
+      &:active {
+        transform: translateY(-1px);
+      }
+    }
+    & > a {
+      color: inherit;
+      text-decoration: none;
+      cursor: pointer;
+      text-transform: none;
+      outline: none;
+    }
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    & {
+      width: 100%;
+    }
+  }
   @media screen and (max-width: 767px) {
     & {
       position: absolute;

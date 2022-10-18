@@ -31,9 +31,16 @@ const Navigation = () => {
           className={sidebar ? "enableSidebar" : "disableSidebar"}
           themecolor={usingTheme ? darkmodeTheme : lightmodeTheme}
         >
-          <li>Project</li>
-          <li>About_Me</li>
-          <li>Contact_Me</li>
+          <li>
+            <a href="#project-container">Project</a>
+          </li>
+          <li>
+            <a href="#about-container">About_Me</a>
+          </li>
+          <li>
+            {" "}
+            <a href="#contact-container">Contact_Me</a>
+          </li>
         </NavLinks>
         <ThemeSwitch />
         <Hamburger setSidebar={setSidebar} sidebar={sidebar} />

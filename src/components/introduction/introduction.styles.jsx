@@ -92,9 +92,15 @@ export const IntroductionDetails = styled.section`
   flex-direction: column;
   justify-content: center;
   padding: 0 3rem;
-  background-color: rgba(0, 53, 102, 0.2);
-  background-size: 50%;
-  background-repeat: no-repeat;
+  background: #0d1b2a;
+  background: -webkit-linear-gradient(
+    0deg,
+    #0d1b2a 0%,
+    #162a41 50%,
+    #0d1b2a 100%
+  );
+  background: linear-gradient(0deg, #0d1b2a 0%, #162a41 50%, #0d1b2a 100%);
+
   @media screen and (min-width: 767px) and (max-width: 1023px) {
     & {
       width: 35%;
@@ -108,7 +114,7 @@ export const IntroductionDetails = styled.section`
       text-align: left;
       padding: 0 1rem;
     }
-    & > h1 {
+    & > div > h1 {
       font-size: 22px;
     }
     & > h4 {
@@ -116,7 +122,7 @@ export const IntroductionDetails = styled.section`
       margin: 0.5rem 0;
     }
   }
-  & > h1 {
+  & > div > h1 {
     text-transform: uppercase;
     margin-bottom: 10px;
   }
@@ -132,6 +138,72 @@ export const IntroductionDetails = styled.section`
       & {
         font-size: 13px;
       }
+    }
+  }
+`;
+
+export const GlitchWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .glitch {
+    position: relative;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+  }
+
+  .glitch:before,
+  .glitch:after {
+    display: block;
+    content: "JOSUE GARCIA II";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+
+  .glitch:before {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both
+      infinite;
+    color: #0ff;
+    z-index: -1;
+  }
+
+  .glitch:after {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse
+      both infinite;
+    color: #ff00ff;
+    z-index: -2;
+  }
+
+  @keyframes glitch-color {
+    0% {
+      transform: translate(0);
+    }
+
+    20% {
+      transform: translate(-3px, 3px);
+    }
+
+    40% {
+      transform: translate(-3px, -3px);
+    }
+
+    60% {
+      transform: translate(3px, 3px);
+    }
+
+    80% {
+      transform: translate(3px, -3px);
+    }
+
+    to {
+      transform: translate(0);
     }
   }
 `;

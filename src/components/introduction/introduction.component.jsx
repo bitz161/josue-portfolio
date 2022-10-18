@@ -2,13 +2,19 @@ import {
   IntroductionDetails,
   ImageWrapper,
   IntroductionContainer,
+  GlitchWrapper,
 } from "./introduction.styles.jsx";
 import firstImage from "../../assets/images/firstImage.jpg";
 const Introduction = () => {
   return (
     <IntroductionContainer>
       <IntroductionDetails>
-        <h1>Josue Garcia II</h1>
+        <GlitchWrapper>
+          <h1 className="glitch" data-glitch="glitch">
+            Josue Garcia II
+          </h1>
+        </GlitchWrapper>
+
         <hr />
         <h4>Front-end Developer</h4>
         <p>

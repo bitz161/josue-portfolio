@@ -6,7 +6,7 @@ Smart Phone:
 Tablet:
 @media screen and (min-width: 767px) and (max-width: 1023px){
 
-})
+}
 
 Desktop:
 @media screen and (min-width: 1024px) {
