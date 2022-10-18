@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500&family=Commissioner:wght@400;700&display=swap");
+
+body {
+  font-size: 18px;
+  font-family: "Commissioner", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Commissioner", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
