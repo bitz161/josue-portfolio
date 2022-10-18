@@ -31,21 +31,20 @@
     }
     & > img {
       clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-      width: 10cqmax;
+      width: 23vw;
       transition: 0.5s ease-out 100ms;
-      margin-right: -3cqmax;
+      margin-right: -7vw;
       filter: grayscale(1);
       @media screen and (max-width: 767px) {
         & {
-          width: 15cqmax;
-          margin-right: -4cqmax;
+          width: 30vw;
         }
       }
       &:nth-of-type(2) {
-        width: 15cqmax;
+        width: 28vw;
         @media screen and (max-width: 767px) {
           & {
-            width: 20cqmax;
+            width: 35vw;
           }
         }
       }
